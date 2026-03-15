@@ -1,0 +1,41 @@
+@{
+    ViewData["Title"] = "Help Center";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5 mb-5">
+    <h2 class="text-center mb-5">How can we help you?</h2>
+    
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm text-center p-4">
+                <i class="bi bi-box-seam display-4 text-primary mb-3"></i>
+                <h4>Order Issues</h4>
+                <p>Find answers to questions about your order status, delivery, and tracking.</p>
+                <a href="/Home/TrackOrder" class="btn btn-outline-primary">Track Order</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm text-center p-4">
+                <i class="bi bi-arrow-repeat display-4 text-warning mb-3"></i>
+                <h4>Returns & Refunds</h4>
+                <p>Learn about our return policy and how to initiate a refund.</p>
+                <a href="/Home/Returns" class="btn btn-outline-warning">View Policy</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm text-center p-4">
+                <i class="bi bi-person-circle display-4 text-success mb-3"></i>
+                <h4>Account Settings</h4>
+                <p>Manage your account details, password, and preferences.</p>
+                <a href="/Account/Profile" class="btn btn-outline-success">Go to Profile</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mt-5 text-center">
+        <h4>Still need help?</h4>
+        <p>Our support team is available 24/7 to assist you.</p>
+        <a href="/Home/Contact" class="btn btn-primary btn-lg">Contact Support</a>
+    </div>
+</div>

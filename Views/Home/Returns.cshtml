@@ -1,0 +1,57 @@
+@{
+    ViewData["Title"] = "Returns & Refunds";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5 mb-5">
+    <div class="card shadow-sm border-0">
+        <div class="card-body p-5">
+            <h2 class="mb-4 text-center fw-bold">Returns & Refunds Policy</h2>
+            <p class="text-muted text-center mb-5">We want you to be completely satisfied with your purchase.</p>
+            
+            <div class="accordion" id="returnsAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            <strong>How do I return an item?</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#returnsAccordion">
+                        <div class="accordion-body">
+                            You can return an item within <strong>7 days</strong> of delivery. To initiate a return, please contact our support team or use the return form in your order history.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            <strong>When will I get my refund?</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#returnsAccordion">
+                        <div class="accordion-body">
+                            Refunds are processed within <strong>5-7 business days</strong> after we receive and inspect the returned item. The amount will be credited to your original payment method or mobile wallet.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            <strong>What items are non-returnable?</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#returnsAccordion">
+                        <div class="accordion-body">
+                            Perishable goods, intimate apparel, and custom-made items are generally non-returnable unless they arrived damaged or defective.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5 text-center">
+                <h5>Have a specific issue?</h5>
+                <a href="/Home/Contact" class="btn btn-dark mt-2">Submit a Return Request</a>
+            </div>
+        </div>
+    </div>
+</div>
